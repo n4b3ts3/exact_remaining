@@ -4,5 +4,5 @@
 number = float(input("Please input the desired number: "))
 percent = float(input("Please input the percent you need to add: "))
 exact_remaining = number + (number*percent)/(100-percent)
-print(f"For getting {number} after substracting {(number*percent)/100} you need to use {exact_remaining}")
-print(f"The resulting value then will be {(exact_remaining*percent)/100}")
+print(f"For getting {number} after substracting its {percent}% you need to use {exact_remaining}")
+print(f"The resulting value then will be {exact_remaining - (exact_remaining*percent)/100}")
